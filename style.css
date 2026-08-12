@@ -1,0 +1,900 @@
+/* =====================================================
+   V3 GROUP OF BUSINESS
+   INVESTMENT INTEREST FORM
+   STYLE SHEET
+===================================================== */
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+  --primary: #111111;
+  --secondary: #222222;
+  --accent: #c99a3d;
+  --accent-light: #f5e6c8;
+
+  --background: #f5f5f5;
+  --card: #ffffff;
+
+  --text: #171717;
+  --muted: #707070;
+  --border: #e3e3e3;
+
+  --success: #16824b;
+
+  --radius: 18px;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8f8f8 0%,
+      #eeeeee 100%
+    );
+
+  color: var(--text);
+
+  min-height: 100vh;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  width: 100%;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid var(--border);
+
+  padding: 16px 20px;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 100;
+}
+
+
+.brand {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.logo {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #111111,
+      #343434
+    );
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.brand-text h1 {
+  font-size: 17px;
+
+  font-weight: 750;
+
+  line-height: 1.2;
+}
+
+
+.brand-text p {
+  margin-top: 2px;
+
+  color: var(--accent);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+  width: 100%;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  padding: 28px 16px 60px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  text-align: center;
+
+  padding: 20px 10px 30px;
+}
+
+
+.badge {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border-radius: 50px;
+
+  background: var(--accent-light);
+
+  color: #8a641d;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 14px;
+}
+
+
+.hero h2 {
+  font-size: clamp(30px, 7vw, 48px);
+
+  line-height: 1.08;
+
+  letter-spacing: -1.5px;
+
+  font-weight: 850;
+
+  color: var(--primary);
+
+  margin-bottom: 14px;
+}
+
+
+.hero p {
+  max-width: 520px;
+
+  margin: 0 auto;
+
+  color: var(--muted);
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  background: var(--card);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius);
+
+  padding: 22px;
+
+  margin-bottom: 18px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.045);
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+}
+
+
+.icon {
+  flex-shrink: 0;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 11px;
+
+  background: var(--accent-light);
+
+  color: #8a641d;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+
+.section-title h3 {
+  font-size: 18px;
+
+  font-weight: 800;
+
+  margin-bottom: 2px;
+}
+
+
+.section-title p {
+  font-size: 13px;
+
+  color: var(--muted);
+}
+
+
+/* =========================
+   UNIT CARD
+========================= */
+
+.unit-card {
+  border-top: 4px solid var(--accent);
+}
+
+
+.price-box {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #111111,
+      #292929
+    );
+
+  color: white;
+
+  padding: 17px 18px;
+
+  border-radius: 14px;
+
+  margin-bottom: 20px;
+}
+
+
+.price-box span {
+  font-size: 14px;
+
+  opacity: 0.8;
+}
+
+
+.price-box strong {
+  font-size: 25px;
+
+  color: #f1d28f;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+  margin-bottom: 17px;
+}
+
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+
+.form-group label {
+  display: block;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  margin-bottom: 7px;
+
+  color: #333333;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+select,
+textarea {
+  width: 100%;
+
+  border: 1px solid var(--border);
+
+  background: #ffffff;
+
+  color: var(--text);
+
+  border-radius: 12px;
+
+  padding: 13px 14px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  color: #a2a2a2;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(201, 154, 61, 0.13);
+}
+
+
+textarea {
+  resize: vertical;
+
+  min-height: 95px;
+}
+
+
+/* =========================
+   FORM ROW
+========================= */
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+}
+
+
+/* =========================
+   TOTAL BOX
+========================= */
+
+.total-box {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  margin-top: 17px;
+}
+
+
+.total-box > div {
+  background: #fafafa;
+
+  border: 1px solid var(--border);
+
+  border-radius: 13px;
+
+  padding: 14px;
+}
+
+
+.total-box span {
+  display: block;
+
+  color: var(--muted);
+
+  font-size: 12px;
+
+  margin-bottom: 3px;
+}
+
+
+.total-box strong {
+  font-size: 19px;
+
+  color: var(--primary);
+}
+
+
+/* =========================
+   INFO BOX
+========================= */
+
+.info-box {
+  background:
+    linear-gradient(
+      135deg,
+      #fffaf0,
+      #fff7e8
+    );
+
+  border: 1px solid #edd9aa;
+
+  border-radius: 13px;
+
+  padding: 15px;
+}
+
+
+.info-box strong {
+  display: block;
+
+  font-size: 14px;
+
+  margin-bottom: 4px;
+
+  color: #795719;
+}
+
+
+.info-box p {
+  color: #776d5e;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CHECKBOX GRID
+========================= */
+
+.checkbox-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+
+.checkbox-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  min-height: 48px;
+
+  padding: 11px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+
+.checkbox-item:hover {
+  border-color: var(--accent);
+
+  background: #fffdf8;
+}
+
+
+.checkbox-item input {
+  width: 17px;
+  height: 17px;
+
+  accent-color: var(--accent);
+
+  flex-shrink: 0;
+}
+
+
+.checkbox-item span {
+  font-size: 12px;
+
+  font-weight: 600;
+
+  color: #3b3b3b;
+}
+
+
+/* =========================
+   ADDITIONAL CONCEPT
+========================= */
+
+.extra-concept {
+  margin-top: 20px;
+}
+
+
+/* =========================
+   DECLARATION
+========================= */
+
+.declaration-card {
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fbfbfb
+    );
+}
+
+
+.declaration {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+
+.declaration input {
+  width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  margin-top: 2px;
+
+  accent-color: var(--accent);
+}
+
+
+.declaration span {
+  font-size: 12px;
+
+  color: #666666;
+
+  line-height: 1.65;
+}
+
+
+/* =========================
+   SUBMIT SECTION
+========================= */
+
+.submit-section {
+  padding: 4px 0 25px;
+
+  text-align: center;
+}
+
+
+.submit-btn {
+  width: 100%;
+
+  min-height: 56px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #111111,
+      #292929
+    );
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 750;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 13px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+
+.arrow {
+  font-size: 21px;
+
+  color: #f1d28f;
+}
+
+
+.secure-text {
+  margin-top: 10px;
+
+  font-size: 11px;
+
+  color: #888888;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+
+  padding: 20px 10px;
+
+  color: #777777;
+}
+
+
+.footer strong {
+  color: #333333;
+
+  font-size: 14px;
+}
+
+
+.footer p {
+  color: var(--accent);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  margin-top: 2px;
+}
+
+
+.footer small {
+  display: block;
+
+  margin-top: 8px;
+
+  font-size: 10px;
+
+  color: #999999;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+  .header {
+    padding: 13px 15px;
+  }
+
+
+  .logo {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+  }
+
+
+  .brand-text h1 {
+    font-size: 15px;
+  }
+
+
+  .container {
+    padding:
+      20px
+      12px
+      45px;
+  }
+
+
+  .hero {
+    padding:
+      14px
+      5px
+      24px;
+  }
+
+
+  .hero h2 {
+    font-size: 32px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .hero p {
+    font-size: 13px;
+  }
+
+
+  .card {
+    padding: 17px;
+
+    border-radius: 15px;
+  }
+
+
+  .section-title {
+    margin-bottom: 18px;
+  }
+
+
+  .section-title h3 {
+    font-size: 16px;
+  }
+
+
+  .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .total-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .total-box strong {
+    font-size: 17px;
+  }
+
+
+  .submit-btn {
+    min-height: 54px;
+
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   SMALL DEVICES
+========================= */
+
+@media (max-width: 360px) {
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+
+  .card {
+    padding: 15px;
+  }
+
+
+  .price-box {
+    padding: 14px;
+  }
+
+
+  .price-box strong {
+    font-size: 22px;
+  }
+
+}
