@@ -92,7 +92,9 @@ unitsInput.addEventListener("change", calculateUnits);
 
 function validMobile(number) {
 
-    return /^[6-9][0-9]{9}$/.test(number);
+    const clean = String(number).replace(/\D/g, "");
+
+    return clean.length === 10;
 
 }
 
