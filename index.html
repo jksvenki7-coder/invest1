@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="V3 Group of Business - All in One App Investment Interest Form"
+  >
+
+  <title>V3 Group of Business | Investment Interest</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="header">
+    <div class="brand">
+      <div class="logo">V3</div>
+
+      <div class="brand-text">
+        <h1>V3 Group of Business</h1>
+        <p>All in One App</p>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main class="container">
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+      <span class="badge">INVESTMENT INTEREST</span>
+
+      <h2>Be Part of Our<br>All in One App</h2>
+
+      <p>
+        Register your interest and explore business
+        opportunities with V3 Group of Business.
+      </p>
+    </section>
+
+
+    <!-- =========================
+         UNIT INFORMATION
+    ========================== -->
+
+    <section class="card unit-card">
+
+      <div class="section-title">
+        <span class="icon">₹</span>
+
+        <div>
+          <h3>Investment Unit</h3>
+          <p>Choose the number of units you are interested in.</p>
+        </div>
+      </div>
+
+      <div class="price-box">
+        <span>1 Unit</span>
+        <strong>₹99</strong>
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="units">
+          Number of Units
+        </label>
+
+        <input
+          type="number"
+          id="units"
+          name="units"
+          min="1"
+          value="1"
+          placeholder="Enter number of units"
+          required
+        >
+
+      </div>
+
+
+      <div class="total-box">
+
+        <div>
+          <span>Total Units</span>
+          <strong id="totalUnits">1</strong>
+        </div>
+
+        <div>
+          <span>Total Amount</span>
+          <strong id="totalAmount">₹99</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PERSONAL DETAILS
+    ========================== -->
+
+    <section class="card">
+
+      <div class="section-title">
+
+        <span class="icon">01</span>
+
+        <div>
+          <h3>Personal Details</h3>
+          <p>Please enter your basic information.</p>
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="fullName">
+          Full Name
+        </label>
+
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="Enter your full name"
+          autocomplete="name"
+          required
+        >
+
+      </div>
+
+
+      <div class="form-row">
+
+        <div class="form-group">
+
+          <label for="mobile">
+            Mobile Number
+          </label>
+
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            placeholder="10 digit mobile number"
+            maxlength="10"
+            inputmode="numeric"
+            autocomplete="tel"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="whatsapp">
+            WhatsApp Number
+          </label>
+
+          <input
+            type="tel"
+            id="whatsapp"
+            name="whatsapp"
+            placeholder="WhatsApp number"
+            maxlength="10"
+            inputmode="numeric"
+            required
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="email">
+          Email Address
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+          autocomplete="email"
+        >
+
+      </div>
+
+
+      <div class="form-row">
+
+        <div class="form-group">
+
+          <label for="city">
+            City
+          </label>
+
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Enter city"
+            autocomplete="address-level2"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="state">
+            State
+          </label>
+
+          <select
+            id="state"
+            name="state"
+            required
+          >
+
+            <option value="">
+              Select State
+            </option>
+
+            <option value="Andhra Pradesh">
+              Andhra Pradesh
+            </option>
+
+            <option value="Telangana">
+              Telangana
+            </option>
+
+            <option value="Tamil Nadu">
+              Tamil Nadu
+            </option>
+
+            <option value="Karnataka">
+              Karnataka
+            </option>
+
+            <option value="Kerala">
+              Kerala
+            </option>
+
+            <option value="Other">
+              Other
+            </option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="address">
+          Address
+        </label>
+
+        <textarea
+          id="address"
+          name="address"
+          rows="3"
+          placeholder="Enter your address"
+          autocomplete="street-address"
+          required
+        ></textarea>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         REFERRAL
+    ========================== -->
+
+    <section class="card">
+
+      <div class="section-title">
+
+        <span class="icon">02</span>
+
+        <div>
+          <h3>Referral Details</h3>
+          <p>
+            If someone referred you, enter their referral code.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="referralCode">
+          Referral Code
+        </label>
+
+        <input
+          type="text"
+          id="referralCode"
+          name="referralCode"
+          placeholder="Enter referral code"
+        >
+
+      </div>
+
+
+      <div class="info-box">
+
+        <strong>Referral Program</strong>
+
+        <p>
+          Referral benefits and eligibility will be
+          applicable according to the official V3
+          program terms.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BUSINESS OPPORTUNITIES
+    ========================== -->
+
+    <section class="card">
+
+      <div class="section-title">
+
+        <span class="icon">03</span>
+
+        <div>
+          <h3>Business Opportunities</h3>
+          <p>
+            Select the concepts you are interested in.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="checkbox-grid">
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="E-Commerce"
+          >
+          <span>E-Commerce</span>
+        </label>
+
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="Events & Catering"
+          >
+          <span>Events & Catering</span>
+        </label>
+
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="Job Consultancy & Service"
+          >
+          <span>Job Consultancy & Service</span>
+        </label>
+
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="Courier & Ride Booking"
+          >
+          <span>Courier & Ride Booking</span>
+        </label>
+
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="Real Estate & Construction"
+          >
+          <span>Real Estate & Construction</span>
+        </label>
+
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="Loans & Insurance"
+          >
+          <span>Loans & Insurance</span>
+        </label>
+
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="Tours & Travels"
+          >
+          <span>Tours & Travels</span>
+        </label>
+
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="Home Services"
+          >
+          <span>Home Services</span>
+        </label>
+
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="Franchise & Machinery"
+          >
+          <span>Franchise & Machinery</span>
+        </label>
+
+
+        <label class="checkbox-item">
+          <input
+            type="checkbox"
+            name="business"
+            value="Other / New Concept"
+          >
+          <span>Other / New Concept</span>
+        </label>
+
+      </div>
+
+
+      <div class="form-group extra-concept">
+
+        <label for="additionalConcept">
+          Additional Concept / Message
+        </label>
+
+        <textarea
+          id="additionalConcept"
+          name="additionalConcept"
+          rows="4"
+          placeholder="Have another business concept or suggestion? Enter it here..."
+        ></textarea>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         DECLARATION
+    ========================== -->
+
+    <section class="card declaration-card">
+
+      <div class="section-title">
+
+        <span class="icon">04</span>
+
+        <div>
+          <h3>Declaration</h3>
+          <p>Please read before submitting.</p>
+        </div>
+
+      </div>
+
+
+      <label class="declaration">
+
+        <input
+          type="checkbox"
+          id="declaration"
+          name="declaration"
+          required
+        >
+
+        <span>
+          I confirm that the information provided by me
+          is correct. I understand that this form is an
+          expression of interest and does not by itself
+          constitute allotment or a guarantee of returns.
+        </span>
+
+      </label>
+
+    </section>
+
+
+    <!-- =========================
+         SUBMIT
+    ========================== -->
+
+    <section class="submit-section">
+
+      <button
+        type="button"
+        id="submitBtn"
+        class="submit-btn"
+      >
+        <span>Submit Investment Interest</span>
+        <span class="arrow">→</span>
+      </button>
+
+
+      <p class="secure-text">
+        Your details will be prepared for WhatsApp submission.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+      <strong>V3 Group of Business</strong>
+
+      <p>
+        All in One App
+      </p>
+
+      <small>
+        © 2026 V3 Group of Business. All rights reserved.
+      </small>
+
+    </footer>
+
+  </main>
+
+
+  <!-- JavaScript -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
